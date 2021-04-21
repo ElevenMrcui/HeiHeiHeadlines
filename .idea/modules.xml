@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/leadnews.iml" filepath="$PROJECT_DIR$/.idea/leadnews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leadnews-admin/leadnews-admin.iml" filepath="$PROJECT_DIR$/leadnews-admin/leadnews-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leadnews-apis/leadnews-apis.iml" filepath="$PROJECT_DIR$/leadnews-apis/leadnews-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leadnews-common/leadnews-common.iml" filepath="$PROJECT_DIR$/leadnews-common/leadnews-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leadnews-model/leadnews-model.iml" filepath="$PROJECT_DIR$/leadnews-model/leadnews-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leadnews-utils/leadnews-utils.iml" filepath="$PROJECT_DIR$/leadnews-utils/leadnews-utils.iml" />
+    </modules>
+  </component>
+</project>
