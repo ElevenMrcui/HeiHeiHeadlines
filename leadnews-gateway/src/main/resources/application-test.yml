@@ -1,13 +1,13 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
   application:
-    name: leadnews-admin
+    name: leadnews-gateway
   cloud:
-    nacos:
-      discovery:
-        server-addr: 47.103.76.211:8848
+        nacos:
+          discovery:
+            server-addr: 47.103.76.211:8848
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.103.76.211:3306/leadnews_admin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC

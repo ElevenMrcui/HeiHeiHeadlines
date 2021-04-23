@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>leadnews-admin</artifactId>
+    <artifactId>leadnews-gateway</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,34 +17,47 @@
     </properties>
 
     <dependencies>
-        <!-- 引入依赖模块 -->
-        <dependency>
-            <groupId>com.wen</groupId>
-            <artifactId>leadnews-model</artifactId>
-        </dependency>
+        <!--  基础依赖配置  -->
         <dependency>
             <groupId>com.wen</groupId>
             <artifactId>leadnews-common</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.wen</groupId>
-            <artifactId>leadnews-apis</artifactId>
-        </dependency>
-        <!-- Spring boot starter -->
+        <!--  springboot项目基础配置  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--  SpringCloud网关 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
         <!--  nacos注册中心  -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <!--  JWT令牌配置  -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+        <!--  spring security权限校验框架  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+
     </dependencies>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
